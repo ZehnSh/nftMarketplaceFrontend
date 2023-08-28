@@ -1,0 +1,23 @@
+.nft-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.nft-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.nft-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.no-nfts {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}

@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set to 100% of viewport height */
+}
+
+.nft-list {
+    display: grid;
+    place-items: center;
+    /* Center both horizontally and vertically */
+    gap: 20px;
+    padding: 20px;
+}
+
+.nft-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nft-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nft-image {
+    padding: 10px;
+}
+
+.nft-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nft-details {
+    padding: 10px;
+}
+
+.nft-title {
+    font-weight: bold;
+}
+
+.nft-owner {
+    margin: 5px 0;
+    max-width: 100%;
+    /* Added this line */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.nft-owner::after {
+    content: attr(data-owner);
+    position: absolute;
+    top: -30px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.nft-owner:hover::after {
+    display: block;
+}
+
+.nft-price {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.no-nfts {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}

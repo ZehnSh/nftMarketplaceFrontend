@@ -1,0 +1,32 @@
+/* Style for the navigation menu */
+.navigation {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Style for the navigation list */
+.navigation-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for each navigation item */
+.navigation-item {
+    margin: 0 15px;
+}
+
+/* Style for navigation links */
+.navigation-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Hover effect for navigation links */
+.navigation-link:hover {
+    color: #f7f7f7;
+}

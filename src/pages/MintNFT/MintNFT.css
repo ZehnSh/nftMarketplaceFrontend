@@ -1,0 +1,38 @@
+/* Style for the NFT form container */
+.nft-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Style for the NFT input field */
+.nft-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.nft-submit {
+    padding: 10px 20px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nft-submit:hover {
+    background-color: #23527c;
+}
+
+.minted-alert {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2ecc71;
+
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
